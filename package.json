@@ -1,0 +1,19 @@
+{
+  "name": "ce-bots",
+  "version": "1.0.0",
+  "description": "CENTINEL Real State bots",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run build && node bin/slack.js",
+    "build": "babel slack.js --out-dir bin"
+  },
+  "author": "Jose Laya",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^2.0.0-rc.6",
+    "express": "^4.14.0",
+    "googleapis": "^8.2.0",
+    "mime": "^1.3.4",
+    "slack": "^7.3.0"
+  }
+}
